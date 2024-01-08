@@ -34,7 +34,8 @@ stages {
              echo "Deploying to Prod"
         }
     }
-        }
+    }
+}
 post {
   success {
     cleanWs()
