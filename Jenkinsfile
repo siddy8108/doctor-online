@@ -25,7 +25,6 @@ stages {
         }
     }
     }
-}
 post {
   success {
     cleanWs()
