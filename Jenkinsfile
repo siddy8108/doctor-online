@@ -22,8 +22,6 @@ stages {
                         when {
                 branch 'Test'
             }
-        steps {
-            echo "Deploying to Test"
         }
     }
         stage('Tomcat Prod Deploy') {
