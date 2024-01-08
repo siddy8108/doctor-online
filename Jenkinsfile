@@ -22,8 +22,6 @@ stages {
                         when {
                 branch 'Test'
             }
-        steps {
-            echo "Deploying to Test"
         }
     }
         stage('Tomcat Prod Deploy') {
@@ -34,7 +32,8 @@ stages {
              echo "Deploying to Prod"
         }
     }
-        }
+    }
+}
 post {
   success {
     cleanWs()
