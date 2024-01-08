@@ -9,6 +9,7 @@ stages {
             sh 'mvn clean package'
         }
     }
+
         stage('Tomcat Dev Deploy') {
             when {
                 branch 'develop'
@@ -32,6 +33,7 @@ stages {
         steps {
              echo "Deploying to Prod"
         }
+    }
     }
 }
 post {
