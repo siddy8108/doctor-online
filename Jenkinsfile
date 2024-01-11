@@ -22,17 +22,9 @@ stages {
             }
         }
         stage('Tomcat Dev Deploy') {
-            when {
-                branch 'develop'
+            steps {
+                tomcatDeploy ("172.31.37.255","ec2-user","tomcat-dev","doctor-online.war")
             }
-        }
-    }
-        stage('Tomcat Prod Deploy') {
-                        when {
-                branch 'main'
-            }
-        steps {
-             echo "Deploying to Prod"
         }
     }
     }
