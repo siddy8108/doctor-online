@@ -27,7 +27,7 @@ stages {
              }
     }
 	post {
-  	success 	{
+  	success {
     		cleanWs()
 	  }
 	}
